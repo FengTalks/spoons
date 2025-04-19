@@ -23,7 +23,6 @@ function checkVolume()
     local currentVolume = getCurrentVolume()
     if isMuted() or (currentVolume and currentVolume < 50) then
         setVolume(50)
-        hs.alert.show("音量已调整到50%")
     end
 end
 
